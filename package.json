@@ -1,0 +1,14 @@
+{
+  "name": "slidev",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "52.14.2",
+    "@slidev/types": "52.14.2"
+  }
+}

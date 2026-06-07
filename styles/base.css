@@ -1,0 +1,21 @@
+.bh-light-blue {
+    background-color: var(--bh-light-blue);
+}
+
+.bh-primary-blue {
+    background-color: var(--bh-primary-blue);
+}
+
+.bh-dark-blue {
+    background-color: var(--bh-dark-blue);
+}
+
+.citation {
+  color: var(--bh-dark-blue);
+  position: relative;
+  top: 95%;
+}
+
+h1 {
+  text-align: center;
+}

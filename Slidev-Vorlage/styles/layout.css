@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	/* bluehands color palette */
+	/* Primary brand colors */
+	--bh-primary-blue: #009bb4; /* bright blue */
+	--bh-dark-blue: #00243a; /* dark blue */
+	--bh-light-blue: #e3f2fd; /* light blue background */
+
+	/* Footer */
+	--bh-footer-height: 2.8rem;
+}
+
+.slidev-layout {
+	position: relative;
+	background-color: white;
+	color: var(--bh-dark-blue);
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	/* Reserve space at the bottom so slide content never overlaps the footer */
+	padding-bottom: var(--bh-footer-height);
+	box-sizing: border-box;
+}
+
+.slidev-layout :is(h1, h2, h3, h4, h5, h6) {
+	color: var(--bh-primary-blue);
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+}
+
+.slidev-layout ul {
+	list-style: none;
+	padding-left: 1.2em;
+}
+
+.slidev-layout ul li {
+	position: relative;
+}
+
+.slidev-layout ul li::before {
+	content: "";
+	position: absolute;
+	left: -0.9em;
+	top: 0.5lh;
+	transform: translateY(-50%);
+	width: 0.42em;
+	height: 0.42em;
+	background-color: var(--bh-primary-blue);
+	border-radius: 2px;
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+	@apply h-full grid;
+
+	h1 {
+		@apply text-6xl leading-20;
+		color: var(--bh-primary-blue);
+	}
+
+	h2 {
+		color: var(--bh-primary-blue);
+	}
+
+	h1 + p {
+		@apply -mt-2 opacity-50 mb-4;
+	}
+
+	p + h2,
+	ul + h2,
+	table + h2 {
+		@apply mt-10;
+	}
+}
