@@ -7,6 +7,12 @@
 ## Spec-Driven Development
 - [OpenSpec](https://github.com/Fission-AI/OpenSpec)
   - `npm i -g @fission-ai/openspec@latest`
+  - `openspec config profile` -> `Workflows Only`
+    - `Propose change`
+    - `Explore ideas`
+    - `Apply tasks`
+    - `Sync specs`
+    - `Archive change`
   - Im Ordner: `openspec init`
 - [AgentOS](https://buildermethods.com/agent-os)
 
