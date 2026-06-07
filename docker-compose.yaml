@@ -1,0 +1,7 @@
+services:
+  presentation:
+    image: nginx:latest
+    ports:
+      - 4200:80
+    volumes:
+      - ./dist:/usr/share/nginx/html
