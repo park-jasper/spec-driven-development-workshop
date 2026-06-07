@@ -12,4 +12,11 @@ layout: two-cols-header
 ::right::
 ## OpenSpec
 - `npm i -g @fission-ai/openspec@latest`
+- `openspec config profile` -> `Workflows`
+  - `Propose change`
+  - `Explore ideas`
+  - `Apply tasks`
+  - `Sync specs`
+  - `Archive change`
 - `openspec init`
+- Bei bestehendem Code: `/opsx-explore` um Code-Basis zu erkunden

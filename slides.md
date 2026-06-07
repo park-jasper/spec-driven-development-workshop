@@ -47,5 +47,9 @@ src: ./pages/product.md
 ---
 
 ---
+src: ./pages/dev-cycle-open-spec.md
+---
+
+---
 src: ./pages/contact.md
 ---

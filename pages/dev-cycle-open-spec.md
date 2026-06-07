@@ -34,7 +34,7 @@ stateDiagram-v2
 
     PlanMode --> BuildMode
 
-    state "Implementation" as BuildMode {
+    state "Implementieren" as BuildMode {
         direction LR
         state "/build" as BuildCommand
 
@@ -48,10 +48,20 @@ stateDiagram-v2
         BuildCommand --> ImplementWrapper
     }
 
-    state "Review/Test" as Review
+    state "Review/<br>Test" as Review
 
-    BuildMode    --> Review
-    Review --> [*]
+    BuildMode --> Review
+
+    state "Finalisieren" as Cleanup {
+        direction TB
+        state "/opsx-sync" as OpsxSync
+        state "/opsx-archive" as OpsxArchive
+
+        OpsxSync --> OpsxArchive
+    }
+
+    Review --> Cleanup
+    Cleanup --> [*]
 ```
 
 <!-- Notes: Hi I am a note -->
